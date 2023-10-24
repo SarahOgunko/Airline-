@@ -5,9 +5,9 @@ public class Flights {
     ArrayList<Passengers> passenger;
 
     private String destination;
-    private int flightId;
+    private DisplayFlights flightId;
 
-    public Flights(String destination, int flightId){
+    public Flights(String destination, DisplayFlights flightId){
         this.destination = destination;
         this.flightId = flightId;
         this.passenger = new ArrayList<>();
@@ -30,11 +30,11 @@ public class Flights {
         this.destination = destination;
     }
 
-    public int getFlightId() {
+    public DisplayFlights getFlightId() {
         return flightId;
     }
 
-    public void setFlightId(int flightId) {
+    public void setFlightId(DisplayFlights flightId) {
         this.flightId = flightId;
     }
 

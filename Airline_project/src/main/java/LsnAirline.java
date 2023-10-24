@@ -4,23 +4,31 @@ public class LsnAirline {
 
     ArrayList<Flights> flights;
 
-    public LsnAirline(){
+    public LsnAirline() {
         this.flights = new ArrayList<>();
     }
 
-    public void addFlights(Flights flights){
+    public void addFlights(Flights flights) {
         this.flights.add(flights);
     }
 
-    public void removeFlights(Flights flights){
+    public void removeFlights(Flights flights) {
         this.flights.remove(flights);
     }
 
-//    public void createFlights(int flightId){
-////        flights.add();
-//    }
-    public void bookFlights(Flights flights, Passengers passengers){
+
+    public void bookFlights(Flights flights, Passengers passengers) {
         flights.addPassengers(passengers);
     }
 
+    public void cancelFlight(Flights flights, Passengers passengers) {
+        flights.removePassengers(passengers);
+    }
+
+    public int countFlight() {
+       return  this.flights.size();
+
+    }
 }
+
+

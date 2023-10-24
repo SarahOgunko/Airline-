@@ -16,7 +16,7 @@ public class LsnAirlineTest {
 
     @Test
     public void canBookFlights() {
-        Flights flights = new Flights("Dubai", DisplayFlights.ABC);
+        Flights flights = new Flights("Dubai", 47478);
         Passengers passengers = new Passengers("Julia", "London", 7849, 3);
         flights.addPassengers(passengers);
         assertThat(flights.passenger.size()).isEqualTo(1);
@@ -24,7 +24,7 @@ public class LsnAirlineTest {
 
     @Test
     public void canCancelFlight() {
-        Flights flights = new Flights("Dubai", DisplayFlights.DEF);
+        Flights flights = new Flights("Dubai",84388);
         Passengers passengers = new Passengers("Julia", "London", 7849, 3);
         flights.removePassengers(passengers);
         assertThat(flights.passenger.size()).isEqualTo(0);
@@ -33,7 +33,7 @@ public class LsnAirlineTest {
 
     @Test
     public void canCountFlight() {
-        Flights flights = new Flights("Dubai", DisplayFlights.MNO);
+        Flights flights = new Flights("Dubai",383478);
         Passengers passengers = new Passengers("Julia", "London", 7849, 3);
         assertThat(lsnAirline.countFlight()).isEqualTo(0);
 

@@ -2,7 +2,7 @@ public class Passengers {
 
     private String name;
     private String address;
-    private int phoneNumber;
+    private float phoneNumber;
     private int passengerId;
 
     public Passengers(String name, String address, int phoneNumber, int passengerId){
@@ -29,7 +29,7 @@ public class Passengers {
         this.address = address;
     }
 
-    public int getPhoneNumber() {
+    public float getPhoneNumber() {
         return phoneNumber;
     }
 

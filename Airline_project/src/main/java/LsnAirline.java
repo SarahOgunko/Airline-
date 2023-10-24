@@ -16,11 +16,9 @@ public class LsnAirline {
         this.flights.remove(flights);
     }
 
-    public void createFlights(int flightId){
-        flights.add()
-    }
-
-
+//    public void createFlights(int flightId){
+////        flights.add();
+//    }
     public void bookFlights(Flights flights, Passengers passengers){
         flights.addPassengers(passengers);
     }
